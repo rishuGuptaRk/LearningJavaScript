@@ -1,2 +1,0 @@
-# LearningJavaScript
-Just Revising stuffs
