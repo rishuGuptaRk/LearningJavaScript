@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Registration Form</title>
+    <link href="https://fonts.cdnfonts.com/css/hacked" rel="stylesheet">
+                
+</head>
+<body>
+    <header>
+        <a href="">Watch Dogs</a>
+        <nav>
+        <ul class="navlist">
+           <ol><a href="">Home</a></ol>
+           <ol><a href="">About</a></ol>
+           <ol><a href="">Contact</a></ol>
+           <ol><a href="">Support</a></ol>
+           <ol><a href="">Donate</a></ol>
+        </ul>
+    </nav>
+    </header>
+    <div class="content ">
+    <h1 class="main-heading">Join Dedsec Community</h1>
+    <div class="contact">
+    <h2>Register to Download Dedsec App</h2>
+    <form action="../style2.css">
+    <p>Name: <br><br><input type="text" required placeholder="Full Name" maxlength="50" size="20"></p>
+    <p>Address: <br><br> <textarea name="Address" id="Address" cols="30" rows="5"></textarea required></p>
+    <fieldset>
+        <legend>Gender</legend>
+        <p required>
+            <input type="radio" name="Gender">MALE
+            <input type="radio" name="Gender">FEMALE
+            <input type="radio" name="Gender">OTHERS
+        </p>
+    </fieldset>
+<p>Email: <br> <input type="email" required placeholder="example@xyz.com"></p>
+<p>Phone: <br> <input type="tel" required placeholder="0987456123"></p>
+<p>Pincode: <br> <input type="number" required placeholder="12345"></p>
+</form>
+</div>
+<h2>Payment Details</h2>
+<form action="">
+    <p>Card Type
+        <select name="card_type" id="card_type" required>
+        <option value="">--Select a Card Type--</option>
+        <option value="Visa">Visa</option>
+        <option value="MasterCard">MasterCard</option>
+        <option value="Rupay">Rupay</option>
+    </select>
+    </p>
+    <p>Credit Card Number: <input type="number" required minlength="16" maxlength="16"></p>
+    <p>Card name: <input type="number" required></p>
+    <p>Expire Date: <input type="date" required></p>
+    <p>CVV: <input type="password" name="cvv" required></p>
+    <p><button><input class="btn1" type="submit" value="Pay Now"> &nbsp &nbsp &nbsp &nbsp<input class="btn2" type="reset" value="Lets Reset"></p>
+</form>
+</div>
+<button class="button-86" role="button"><a class="ip" href="https://www.bing.com/search?pglt=43&q=know+your+ip&cvid=ebb598d2dec24aa6be1ed54346cb2a02&aqs=edge.0.0l9.4336j0j1&FORM=ANNTA1&PC=U531&ntref=1">Know Your IP</a></button>
+</body>
+</html>

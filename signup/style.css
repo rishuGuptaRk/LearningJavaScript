@@ -1,0 +1,44 @@
+#background{
+    background-image: url(./r4.gif);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 40%;
+    background-repeat: no-repeat;
+    background-image: ;
+}
+#stack{
+    
+    opacity: 0.8;
+    padding-top: 10%;
+    padding-right: 50%;
+
+}
+#content{
+    border: 6px solid black;
+    padding: 10px;
+    background-color: grey;
+    animation: myanim 4s infinite;
+}
+
+#main-heading{
+    border: 2px solid black;
+    padding: 2px;
+}
+#register{
+    border: 1px solid black;
+}
+input{
+    color: red;
+}
+@keyframes myanim {
+    20% {
+       bottom: 100px;
+       box-shadow: 30px 45px 70px orange ;
+    }
+    40%{
+        bottom: 100px;
+        box-shadow: 30px 45px 70px white;
+    }
+    
+}

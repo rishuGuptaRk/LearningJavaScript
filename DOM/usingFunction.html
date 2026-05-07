@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM mani</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) { // Not optimal because of traversal
+        const li = document.createElement("li");
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage("python");
+    addLanguage("java");
+    addLanguage("Ruby");
+    function addOptiLanguage(langName){ 
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li) // best way
+    }
+    addOptiLanguage("C++");
+    addLanguage("C");
+    const secondLang = document.querySelector("li:nth-child(2)");
+    const newLi = document.createElement('Li');
+    newLi.textContent = "Mojo";
+    secondLang.replaceWith(newLi);
+
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove(); // C removed from list
+</script>
+</html>
